@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Institute of Digital Risk</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header>
+    <div id="head1" class="brand">
+      <img src="demo1.png" alt="IDR logo" class="logo" />
+      <div class="brand-text">
+        <span class="sr-only">Institute of Digital Risk</span>
+        <h1>Institute of Digital Risk</h1>
+      </div>
+    </div>
+
+    <nav aria-label="Main navigation" id="main-nav">
+      <a href="#Home">Home</a>
+      <a href="#About">About</a>
+      <a href="#service">Services</a>
+      <a href="#Community">Community</a>
+      <a href="#Contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hline" id="Home" role="region" aria-labelledby="hero-title">
+      <h2 id="hero-title">Advancing the Future of Digital Risk</h2>
+      <p class="hero-sub">Training and deploying digital risk practitioners through academic collaboration and industry practice.</p>
+      <button class="cta" type="button" onclick="document.getElementById('service').scrollIntoView({behavior:'smooth'})">Explore Programs</button>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="About" role="region" aria-labelledby="about-title">
+      <div class="para">
+        <h2 id="about-title">About IDR</h2>
+        <p>Institute of Digital Risk (IDR) is an industry-led training and deployment institute focused on digital, cyber and technology risk roles in regulated, high-consequence environments.</p>
+        <p>We combine academic insight through UK university partnerships with real-world projects to prepare practitioners for critical sectors such as financial services and critical infrastructure.</p>
+      </div>
+
+      <div class="aimage" aria-hidden="true">
+        <img src="IDR.png" alt="IDR illustration" />
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="service" role="region" aria-labelledby="services-title">
+      <h2 id="services-title" class="section-title">Our Service Pillars</h2>
+
+      <div class="services-grid">
+        <article class="flip-box" aria-labelledby="academy-title">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="fimage2.jpg" alt="" class="card-img" />
+              <h3 id="academy-title">Academy</h3>
+              <p>Bootcamps and professional training to build practitioner capability.</p>
+            </div>
+            <div class="flip-box-back">
+              <h3>Academy</h3>
+              <p>Short courses, immersive bootcamps and certification pathways for students and professionals.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="flip-box" aria-labelledby="innovation-title">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="fimage1.jpg" alt="" class="card-img" />
+              <h3 id="innovation-title">Innovation & Incubation</h3>
+              <p>Developing IP, risk models and AI governance frameworks.</p>
+            </div>
+            <div class="flip-box-back">
+              <h3>Innovation</h3>
+              <p>Incubation projects, research partnerships and prototype governance for emerging risks.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="flip-box" aria-labelledby="advisory-title">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <img src="fimage3.PNG" alt="" class="card-img" />
+              <h3 id="advisory-title">Advisory Services</h3>
+              <p>Support for implementing NIST, ISO 27001, NIS2 and other frameworks.</p>
+            </div>
+            <div class="flip-box-back">
+              <h3>Advisory</h3>
+              <p>Practical advisory and deployment support for regulated organisations.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Community -->
+    <section class="Community" id="Community" role="region" aria-labelledby="community-title">
+      <div class="ctitle">
+        <h2 id="community-title">Our Community</h2>
+        <p>We serve students, early-career professionals and practitioners in sectors like financial services and critical infrastructure seeking upskilling in digital and cyber risk.</p>
+      </div>
+
+      <div id="Container" class="cards">
+        <div class="cont1">
+          <img src="graduation-hat.png" alt="" width="50" />
+          <p>Upskilling in digital and cyber risk.</p>
+        </div>
+
+        <div class="cont1">
+          <img src="briefcase.png" alt="" width="50" />
+          <p>Early-career development and industry readiness.</p>
+        </div>
+
+        <div class="cont1">
+          <img src="doctor.png" alt="" width="50" />
+          <p>Supporting critical infrastructure and regulated environments.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="ContactUs" id="Contact" role="region" aria-labelledby="contact-title">
+      <div class="CSAbout">
+        <h2 id="contact-title">Get in Touch</h2>
+        <p>Whether you’re a student seeking guidance, a professional looking to upskill, or an organisation wanting to collaborate, register your interest below.</p>
+      </div>
+
+      <div class="FormContainer">
+        <form id="contact-form" novalidate>
+          <h3>Register interest</h3>
+
+          <label for="name" class="sr-only">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+
+          <label for="email" class="sr-only">Email</label>
+          <input id="email" name="email" type="email" placeholder="Your email" required />
+
+          <label for="message" class="sr-only">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Message or area of interest" required></textarea>
+
+          <button id="submit-btn" type="submit">Send Message</button>
+
+          <p id="form-feedback" class="feedback" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <hr />
+    <p>&copy; Institute of Digital Risk</p>
+    <hr />
+  </footer>
+
+  <script src="Jscript.js"></script>
+</body>
+</html>
